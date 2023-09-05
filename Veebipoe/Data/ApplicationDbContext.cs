@@ -12,6 +12,7 @@ namespace Veebipoe.Data
         public DbSet<Order> Orders { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
+
         }
     }
 }
