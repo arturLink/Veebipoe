@@ -46,20 +46,20 @@ namespace Veebipoe.Controllers
             return _context.Persons.ToList();
         }
 
-        [HttpDelete("/kustuta2/{id}")]
-        public IActionResult DeletePersons2(int id)
-        {
-            var person = _context.Persons.Find(id);
+        //[HttpDelete("/kustuta2/{id}")]
+        //public IActionResult DeletePersons2(int id)
+        //{
+        //    var person = _context.Persons.Find(id);
 
-            if (person == null)
-            {
-                return NotFound();
-            }
+        //    if (person == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            _context.Persons.Remove(person);
-            _context.SaveChanges();
-            return NoContent();
-        }
+        //    _context.Persons.Remove(person);
+        //    _context.SaveChanges();
+        //    return NoContent();
+        //}
 
         [HttpGet("{id}")]
         public ActionResult<Person> GetPersons(int id)
